@@ -2,11 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>{{ flatpage.title }}</title>
+    <title>{% block title %} {% endblock title %}</title>
 </head>
 <body>
-
-{{ flatpage.content }}
+{% block content %}
+{% endblock content %}
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 <i><h6>Пувел:3</h6>
 </i>
 </body>

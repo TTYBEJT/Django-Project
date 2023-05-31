@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Дублер</title>
-</head>
-<body>
-{{ flatpage.title }}
+{% extends 'flatpages\about.html'%}
 
-{{ flatpage.content }}
+{% block title %}
+{{flatpage.title}}
+{% endblock title %}
 
-{{ flatpage.content }}
-</body>
-</html>
+{% block content %}
+{{flatpage.content}}
+{% endblock content %}
